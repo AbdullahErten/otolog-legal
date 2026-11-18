@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Otolog – Gizlilik, koşullar ve hesap silme</title>
+<meta name="description" content="Otolog gizlilik politikası, kullanım koşulları, abonelik koşulları ve hesap / veri silme talebi. Privacy policy, terms of use and account deletion. Datenschutz, Nutzungsbedingungen und Kontolöschung.">
+<meta name="robots" content="index, follow">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A0A0C'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='%23fff' stroke-width='7'/%3E%3Cpath d='M26 52 L36 12' stroke='%232563EB' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+<!-- Harici yazı tipi / analiz / çerez YOK: sayfa ziyaretçiden veri toplamaz. -->
+<style>
+  :root {
+    --bg: #F8FAFC; --surface: #FFFFFF; --border: #E2E8F0; --text: #0F172A; --text2: #475569; --text3: #64748B;
+    --accent: #2563EB; --accent-soft: rgba(37, 99, 235, .08); --warn: #F97316;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0F172A; --surface: #1E293B; --border: #2B3A4F; --text: #F1F5F9; --text2: #CBD5E1; --text3: #94A3B8;
+      --accent: #3B82F6; --accent-soft: rgba(59, 130, 246, .16);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0F172A; --surface: #1E293B; --border: #2B3A4F; --text: #F1F5F9; --text2: #CBD5E1; --text3: #94A3B8;
+    --accent: #3B82F6; --accent-soft: rgba(59, 130, 246, .16);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, "Helvetica Neue", Arial, sans-serif; }
+  a { color: var(--accent); }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+  header.top { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
+  header.top .wrap { display: flex; align-items: center; gap: 12px; height: 60px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: -.02em; font-size: 18px; text-decoration: none; color: var(--text); }
+  .brand svg { width: 30px; height: 30px; }
+  .spacer { flex: 1; }
+  .seg { display: inline-flex; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; background: var(--surface); }
+  .seg button { border: 0; background: transparent; color: var(--text2); font: 600 13px/1 inherit; font-family: inherit; padding: 8px 10px; cursor: pointer; }
+  .seg button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+  .icon-btn { border: 1px solid var(--border); background: var(--surface); color: var(--text2); border-radius: 10px; width: 34px; height: 34px; cursor: pointer; font-size: 16px; }
+  .hero { padding: 40px 0 8px; }
+  .hero h1 { font-size: clamp(28px, 5vw, 40px); line-height: 1.15; letter-spacing: -.03em; margin: 0 0 10px; }
+  .hero p { color: var(--text2); margin: 0 0 18px; max-width: 640px; }
+  .meta { color: var(--text3); font-size: 13px; }
+  .badges { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 6px; }
+  .badge { display: inline-flex; align-items: center; gap: 10px; padding: 9px 16px; border-radius: 12px; background: #0A0A0C; color: #fff; text-decoration: none; border: 1px solid #2B3A4F; min-width: 170px; }
+  .badge small { display: block; font-size: 10px; opacity: .75; line-height: 1.2; }
+  .badge strong { display: block; font-size: 15px; line-height: 1.2; }
+  .badge[aria-disabled="true"] { opacity: .6; pointer-events: none; }
+  nav.toc { display: flex; flex-wrap: wrap; gap: 8px; margin: 22px 0 6px; }
+  nav.toc a { text-decoration: none; font-size: 14px; font-weight: 600; padding: 7px 12px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); color: var(--text); }
+  nav.toc a:hover { border-color: var(--accent); color: var(--accent); }
+  section { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px; margin: 18px 0; scroll-margin-top: 76px; }
+  section h2 { font-size: 22px; letter-spacing: -.02em; margin: 0 0 6px; }
+  section h3 { font-size: 16px; margin: 20px 0 4px; }
+  section p, section li { color: var(--text2); }
+  section ul, section ol { padding-left: 20px; margin: 6px 0; }
+  .callout { background: var(--accent-soft); border-radius: 12px; padding: 14px 16px; margin: 14px 0; color: var(--text); }
+  .callout strong { color: var(--text); }
+  .table-scroll { overflow-x: auto; margin: 12px 0; border: 1px solid var(--border); border-radius: 12px; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; min-width: 560px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--border); color: var(--text2); }
+  th { color: var(--text); font-weight: 700; background: var(--accent-soft); }
+  tr:last-child td { border-bottom: 0; }
+  .yes { color: var(--accent); font-weight: 700; }
+  .mail { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; padding: 10px 14px; border-radius: 12px; border: 1px solid var(--accent); text-decoration: none; margin: 6px 0; word-break: break-all; }
+  footer { color: var(--text3); font-size: 13px; padding: 24px 0 48px; text-align: center; }
+  [data-lang] { display: none; }
+  html[data-active="tr"] [data-lang="tr"], html[data-active="en"] [data-lang="en"], html[data-active="de"] [data-lang="de"] { display: block; }
+  html:not([data-active]) [data-lang="tr"] { display: block; }
+  @media (max-width: 520px) { section { padding: 18px 16px; } .brand span { display: none; } .badge { flex: 1 1 100%; } }
+  @media print { header.top, nav.toc, .badges { display: none; } [data-lang] { display: block !important; } section { break-inside: avoid; } }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Otolog">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0A0A0C"/><circle cx="32" cy="32" r="17" fill="none" stroke="#fff" stroke-width="7"/><path d="M26 52 L36 12" stroke="#2563EB" stroke-width="6" stroke-linecap="round"/></svg>
+      <span>Otolog</span>
+    </a>
+    <div class="spacer"></div>
+    <div class="seg" role="group" aria-label="Language / Dil / Sprache">
+      <button type="button" data-set-lang="tr" aria-pressed="true">TR</button>
+      <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+      <button type="button" data-set-lang="de" aria-pressed="false">DE</button>
+    </div>
+    <button type="button" class="icon-btn" id="theme" aria-label="Tema / Theme">◐</button>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+
+<!-- ======================= TÜRKÇE ======================= -->
+<div data-lang="tr" lang="tr">
+  <div class="hero">
+    <h1>Gizlilik, koşullar ve hesap silme</h1>
+    <p>Otolog; araç bakım, yakıt / şarj, hatırlatıcı ve masraf kayıtlarınızı tutmanız için geliştirilmiş bir mobil uygulamadır. Bu sayfa, uygulama içindeki "Gizlilik ve koşullar" metninin web sürümüdür.</p>
+    <div class="meta">Son güncelleme: 19 Kasım 2026 · Geçerli sürüm: 1.0</div>
+    <div class="badges">
+      <a class="badge" href="#" aria-disabled="true"><span>&#63743;</span><span><small>Yakında</small><strong>App Store</strong></span></a>
+      <a class="badge" href="#" aria-disabled="true"><span>&#9654;</span><span><small>Yakında</small><strong>Google Play</strong></span></a>
+    </div>
+  </div>
+  <nav class="toc">
+    <a href="#privacy-tr">Gizlilik politikası</a><a href="#safety-tr">Veri güvenliği özeti</a><a href="#terms-tr">Kullanım koşulları</a><a href="#subscription-tr">Abonelik</a><a href="#delete">Hesap ve veri silme</a><a href="#contact-tr">İletişim</a>
+  </nav>
+
+  <section id="privacy-tr">
+    <h2>Gizlilik politikası</h2>
+    <p>Bu politika Otolog uygulamasının (Android ve iOS) hangi verileri neden işlediğini açıklar. Veri sorumlusu Otolog geliştiricisidir; iletişim: <a href="mailto:otolog.destek@gmail.com">otolog.destek@gmail.com</a>.</p>
+    <h3>Toplanan veriler</h3>
+    <ul>
+      <li><strong>Hesap bilgileri:</strong> Google ile girişte adınız, e-posta adresiniz, profil fotoğrafınız ve Firebase kullanıcı kimliğiniz.</li>
+      <li><strong>Girdiğiniz içerik:</strong> araç bilgileri (plaka, marka, model, yıl, KM), bakım, yakıt / şarj ve hatırlatıcı kayıtları, tutarlar, notlar ve torpido bilgileri (şasi no, poliçe no, lastik / yağ bilgileri, notlar).</li>
+      <li><strong>Reklam verileri (yalnızca ücretsiz plan):</strong> Google AdMob; reklam kimliği, IP adresi ve cihaz bilgisi gibi verileri işleyebilir.</li>
+      <li><strong>Cihazda kalanlar:</strong> tema, dil, para birimi, bildirim ayarları, aylık fiş tarama sayacı ve abonelik durumu önbelleği cihazınızda tutulur, sunucuya gönderilmez.</li>
+    </ul>
+    <p>Konum, kişiler, mikrofon, sağlık ya da finansal hesap verisi toplanmaz. Kamera yalnızca siz "Fiş tara"ya dokunduğunuzda sistem kamerası üzerinden açılır.</p>
+    <h3>Akıllı fiş okuma</h3>
+    <p>Fiş okuma tamamen cihazınızda çalışır (Google ML Kit, cihaz üzerinde metin tanıma). Fotoğraf hiçbir sunucuya yüklenmez ve okunduktan sonra silinir; yalnızca formda onayladığınız değerler kaydedilir.</p>
+    <h3>Kullanım amaçları</h3>
+    <ul>
+      <li>Hesabınızı oluşturmak ve kayıtlarınızı cihazlarınız arasında saklamak (uygulama işlevselliği, hesap yönetimi).</li>
+      <li>Hatırlatıcı bildirimlerini cihazınızda planlamak.</li>
+      <li>Ücretsiz planda uygulama açılırken en fazla 4 saatte bir reklam göstermek.</li>
+    </ul>
+    <p>Verileriniz satılmaz, profil çıkarmak ya da reklam hedeflemek için kullanılmaz. Araç ve bakım kayıtlarınız reklam sağlayıcıyla paylaşılmaz.</p>
+    <h3>Hizmet sağlayıcılar</h3>
+    <ul>
+      <li>Google Firebase Authentication ve Cloud Firestore — giriş ve kayıt saklama (<a href="https://firebase.google.com/support/privacy" rel="noopener">gizlilik</a>).</li>
+      <li>Google AdMob — ücretsiz planda açılış reklamı (<a href="https://policies.google.com/technologies/ads" rel="noopener">reklam politikası</a>).</li>
+      <li>Google ML Kit — cihaz üzerinde metin tanıma (veri gönderilmez).</li>
+      <li>Apple App Store / Google Play — abonelik ödemeleri; ödeme bilgilerinizi Otolog görmez.</li>
+    </ul>
+    <h3>Paylaşım ve uygulama içi araç devri</h3>
+    <p>PDF, CSV, ilan metni / görseli ve .otolog dosyaları yalnızca siz paylaştığınızda cihazınızdan çıkar. Uygulama içi araç devri için adınız ve e-posta adresiniz, e-posta adresinizi tam olarak bilen Otolog kullanıcılarınca bulunabilir. Devir paketini yalnızca seçtiğiniz alıcı görür; tutar, not, hatırlatıcı ve yakıt kayıtlarının gidip gitmeyeceğini siz seçersiniz. Sigorta, kasko ve MTV gibi sahibine ait mali kayıtlar devre girmez.</p>
+    <h3>Güvenlik ve saklama</h3>
+    <p>Veriler aktarım sırasında şifrelenir (TLS) ve Google altyapısında saklanır. Güvenlik kuralları, kayıtlarınıza yalnızca sizin hesabınızın erişmesine izin verir. Verileriniz hesabınız silinene kadar saklanır; hesap silindiğinde kalıcı olarak silinir.</p>
+    <h3>Çocuklar</h3>
+    <p>Otolog 13 yaşından küçüklere yönelik değildir ve bilerek çocuklardan kişisel veri toplamaz.</p>
+    <h3>Haklarınız (KVKK / GDPR)</h3>
+    <p>Verilerinize erişme, düzeltme, silme, işlemeye itiraz ve taşınabilirlik haklarına sahipsiniz. Kayıtlarınızı uygulamadan CSV / PDF olarak dışa aktarabilir, uygulama içinden düzeltebilir ve silebilirsiniz. Diğer talepler için bize yazın; en geç 30 gün içinde yanıtlarız. Ayrıca bulunduğunuz ülkedeki veri koruma otoritesine şikâyette bulunabilirsiniz.</p>
+  </section>
+
+  <section id="safety-tr">
+    <h2>Veri güvenliği özeti</h2>
+    <p>Google Play "Veri güvenliği" ve App Store "Gizlilik etiketi" beyanlarımızın özeti.</p>
+    <div class="table-scroll"><table>
+      <tr><th>Veri türü</th><th>Amaç</th><th>Üçüncü tarafla paylaşım</th><th>Zorunlu mu</th></tr>
+      <tr><td>Ad, e-posta, kullanıcı kimliği</td><td>Uygulama işlevselliği, hesap yönetimi</td><td>Hayır (Firebase hizmet sağlayıcıdır)</td><td>Evet (giriş için)</td></tr>
+      <tr><td>Kullanıcı içeriği (araç ve kayıtlar)</td><td>Uygulama işlevselliği</td><td>Hayır</td><td>Evet</td></tr>
+      <tr><td>Fotoğraf (fiş)</td><td>Cihazda metin tanıma</td><td>Hayır — cihazdan çıkmaz, toplanmaz</td><td>İsteğe bağlı</td></tr>
+      <tr><td>Reklam kimliği, cihaz bilgisi</td><td>Reklam (yalnızca ücretsiz plan)</td><td>Evet — Google AdMob</td><td>Pro'da yok</td></tr>
+      <tr><td>Satın alma geçmişi</td><td>Abonelik durumu</td><td>Mağaza üzerinden (Apple / Google)</td><td>Yalnızca Pro</td></tr>
+    </table></div>
+    <ul>
+      <li><span class="yes">✓</span> Veriler aktarım sırasında şifrelenir.</li>
+      <li><span class="yes">✓</span> Hesap ve tüm veriler uygulama içinden tek adımda silinebilir; web üzerinden de talep edilebilir.</li>
+      <li><span class="yes">✓</span> Veriler satılmaz; uygulama içi kayıtlar takip (tracking) için kullanılmaz.</li>
+    </ul>
+  </section>
+
+  <section id="terms-tr">
+    <h2>Kullanım koşulları</h2>
+    <p>Otolog kişisel araç kayıtlarınızı tutmanız için sunulur. Uygulamayı kullanarak bu koşulları kabul edersiniz. Girdiğiniz bilgilerin doğruluğundan ve paylaştığınız dosyalardan siz sorumlusunuz. Uygulama olduğu gibi sunulur; özellikler ve planlar zaman içinde değişebilir. Kötüye kullanım ya da başkasının adına sahte devir yapılması hâlinde hesap erişimi kısıtlanabilir.</p>
+    <h3>Sorumluluk reddi</h3>
+    <p>Tüketim hesapları, bakım tahminleri, hatırlatıcılar ve bildirimler bilgilendirme amaçlıdır. Muayene, sigorta ve vergi gibi yasal süreleri resmi kaynaklardan kontrol edin. Kaçırılan bir vade, ceza, arıza ya da veri kaybından doğan zararlardan Otolog sorumlu tutulamaz. "Zamanında işlendi" ve servis pasaportu işaretleri güven göstergesidir, resmî belge değildir.</p>
+    <p>iOS kullanıcıları için ayrıca Apple'ın <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Standart Lisans Sözleşmesi (EULA)</a> geçerlidir.</p>
+  </section>
+
+  <section id="subscription-tr">
+    <h2>Planlar ve Otolog Pro aboneliği</h2>
+    <p><strong>Ücretsiz:</strong> 1 aktif araç, sınırsız kayıt ve geçmiş, ayda 5 akıllı fiş okuma, uygulama açılışında en fazla 4 saatte bir reklam. <strong>Otolog Pro (Aylık / Yıllık):</strong> reklamsız, sınırsız araç ve fiş okuma, satış ve devir araçları, gelişmiş istatistik ve CSV.</p>
+    <ul>
+      <li>Otolog Pro otomatik yenilenen bir aboneliktir. Ücret, satın almayı onayladığınızda App Store ya da Google Play hesabınızdan alınır.</li>
+      <li>Dönem bitiminden en az 24 saat önce iptal edilmezse abonelik aynı süre ve fiyatla yenilenir; yenileme ücreti dönem bitiminden önceki 24 saat içinde alınır.</li>
+      <li>Yıllık planda 7 günlük ücretsiz deneme sunulabilir; deneme bitmeden iptal ederseniz ücret alınmaz.</li>
+      <li>Aboneliği mağaza hesap ayarlarınızdan yönetebilir ve iptal edebilirsiniz (iOS: Ayarlar › Apple Kimliği › Abonelikler; Android: Google Play › Ödemeler ve abonelikler). İptal, içinde bulunulan dönemin sonunda geçerli olur.</li>
+      <li>Fiyatlar mağazada, bulunduğunuz bölgenin para biriminde gösterilir. İadeler Apple / Google kurallarına tabidir.</li>
+      <li>Uygulamayı silmek aboneliği iptal etmez. Abonelik bitince kayıtlarınız silinmez; fazla araçlar salt okunur olarak saklanır.</li>
+    </ul>
+  </section>
+
+  <section id="delete">
+    <h2>Hesap ve veri silme</h2>
+    <div class="callout"><strong>Uygulamadan (önerilen, anında):</strong> Ana sayfada sağ üstteki profil simgesi › "Hesabımı ve verilerimi sil" › onaylayın › güvenlik için Google hesabınızı yeniden seçin.</div>
+    <h3>Uygulamaya erişemiyorsanız</h3>
+    <ol>
+      <li>Otolog'a giriş yaptığınız Google hesabının e-posta adresinden <a href="mailto:otolog.destek@gmail.com?subject=Otolog%20hesap%20silme%20talebi">otolog.destek@gmail.com</a> adresine yazın.</li>
+      <li>Konu: "Hesap silme talebi". Talep, kimliğinizi doğrulamak için hesabın e-postasından gelmelidir.</li>
+      <li>Talebiniz en geç 30 gün içinde tamamlanır ve size e-postayla bildirilir.</li>
+    </ol>
+    <h3>Silinenler</h3>
+    <ul>
+      <li>Firebase hesabınız ve kullanıcı kimliğiniz,</li>
+      <li>tüm araçlar ile bakım, yakıt / şarj, hatırlatıcı ve torpido kayıtları,</li>
+      <li>gönderdiğiniz devir teklifleri ve devir için kullanılan e-posta rehberi kaydı,</li>
+      <li>cihazınızdaki planlı bildirimler ve uygulama tercihleri.</li>
+    </ul>
+    <h3>Saklananlar</h3>
+    <p>Otolog sunucularında hiçbir kayıt tutulmaz. Daha önce başkasına devrettiğiniz ve alıcının kabul ettiği kayıtlar artık alıcının hesabına aittir. Daha önce paylaştığınız PDF / CSV / .otolog dosyaları alıcılarda kalır. Satın alma kayıtları Apple / Google tarafından yasal süreler boyunca tutulur. Silinen veriler Google altyapısının yedeklerinden Google'ın silme süreleri içinde kaldırılır.</p>
+    <p>Hesabı silmeden yalnızca belirli verileri silmek için uygulamada ilgili kaydı, aracı ya da hatırlatıcıyı silebilirsiniz; bunu yapamıyorsanız aynı adrese yazın.</p>
+  </section>
+
+  <section id="contact-tr">
+    <h2>İletişim</h2>
+    <p>Sorularınız, destek ve veri talepleriniz için:</p>
+    <a class="mail" href="mailto:otolog.destek@gmail.com">✉ otolog.destek@gmail.com</a>
+    <p class="meta">Bu politika değişirse güncel sürüm bu sayfada ve uygulama içinde yayımlanır; önemli değişiklikler uygulama içinde duyurulur.</p>
+  </section>
+</div>
+
+<!-- ======================= ENGLISH ======================= -->
+<div data-lang="en" lang="en">
+  <div class="hero">
+    <h1>Privacy, terms and account deletion</h1>
+    <p>Otolog is a mobile app for keeping your vehicle maintenance, fuel / charging, reminder and expense records. This page is the web version of the in-app "Privacy and terms" text.</p>
+    <div class="meta">Last updated: 19 November 2026 · Version 1.0</div>
+    <div class="badges">
+      <a class="badge" href="#" aria-disabled="true"><span>&#63743;</span><span><small>Coming soon</small><strong>App Store</strong></span></a>
+      <a class="badge" href="#" aria-disabled="true"><span>&#9654;</span><span><small>Coming soon</small><strong>Google Play</strong></span></a>
+    </div>
+  </div>
+  <nav class="toc">
+    <a href="#privacy-en">Privacy policy</a><a href="#safety-en">Data safety summary</a><a href="#terms-en">Terms of use</a><a href="#subscription-en">Subscription</a><a href="#delete-en">Delete account and data</a><a href="#contact-en">Contact</a>
+  </nav>
+
+  <section id="privacy-en">
+    <h2>Privacy policy</h2>
+    <p>This policy explains what data the Otolog app (Android and iOS) processes and why. The data controller is the Otolog developer; contact: <a href="mailto:otolog.destek@gmail.com">otolog.destek@gmail.com</a>.</p>
+    <h3>Data we collect</h3>
+    <ul>
+      <li><strong>Account details:</strong> when you sign in with Google, your name, email address, profile photo and Firebase user ID.</li>
+      <li><strong>Content you enter:</strong> vehicle details (plate, make, model, year, mileage), maintenance, fuel / charging and reminder records, amounts, notes and glovebox details (VIN, policy number, tyre / oil details, notes).</li>
+      <li><strong>Advertising data (free plan only):</strong> Google AdMob may process data such as your advertising ID, IP address and device information.</li>
+      <li><strong>Kept on your device:</strong> theme, language, currency, notification settings, the monthly receipt-scan counter and the cached subscription status stay on your device and are never sent to a server.</li>
+    </ul>
+    <p>We do not collect location, contacts, microphone, health or financial account data. The camera opens only through the system camera when you tap "Scan receipt".</p>
+    <h3>Smart receipt reading</h3>
+    <p>Receipt reading runs entirely on your device (Google ML Kit on-device text recognition). The photo is never uploaded and is deleted after reading; only the values you confirm in the form are saved.</p>
+    <h3>How we use data</h3>
+    <ul>
+      <li>To create your account and store your records across your devices (app functionality, account management).</li>
+      <li>To schedule reminder notifications on your device.</li>
+      <li>To show an ad when the app opens, at most once every 4 hours, on the free plan.</li>
+    </ul>
+    <p>Your data is never sold or used for profiling or ad targeting. Your vehicle and maintenance records are never shared with the ad provider.</p>
+    <h3>Service providers</h3>
+    <ul>
+      <li>Google Firebase Authentication and Cloud Firestore — sign-in and storage (<a href="https://firebase.google.com/support/privacy" rel="noopener">privacy</a>).</li>
+      <li>Google AdMob — app-open ads on the free plan (<a href="https://policies.google.com/technologies/ads" rel="noopener">ads policy</a>).</li>
+      <li>Google ML Kit — on-device text recognition (no data sent).</li>
+      <li>Apple App Store / Google Play — subscription payments; Otolog never sees your payment details.</li>
+    </ul>
+    <h3>Sharing and in-app vehicle transfer</h3>
+    <p>PDF, CSV, listing text / image and .otolog files leave your device only when you share them. For in-app vehicle transfers, Otolog users who know your exact email address can find your name and account. Only the buyer you choose sees a transfer package, and you decide whether amounts, notes, reminders and fuel records are included. Owner-specific financial records such as insurance and vehicle tax are never transferred.</p>
+    <h3>Security and retention</h3>
+    <p>Data is encrypted in transit (TLS) and stored on Google infrastructure. Security rules allow only your account to access your records. Data is kept until you delete your account, then permanently deleted.</p>
+    <h3>Children</h3>
+    <p>Otolog is not directed at children under 13 and does not knowingly collect personal data from children.</p>
+    <h3>Your rights (GDPR and similar laws)</h3>
+    <p>You have the right to access, correct, delete, object to processing of and port your data. You can export your records as CSV / PDF and correct or delete them in the app. For other requests, email us; we reply within 30 days. You may also lodge a complaint with your local data protection authority.</p>
+  </section>
+
+  <section id="safety-en">
+    <h2>Data safety summary</h2>
+    <p>Summary of our Google Play "Data safety" and App Store "Privacy nutrition label" declarations.</p>
+    <div class="table-scroll"><table>
+      <tr><th>Data type</th><th>Purpose</th><th>Shared with third parties</th><th>Required</th></tr>
+      <tr><td>Name, email, user ID</td><td>App functionality, account management</td><td>No (Firebase is a service provider)</td><td>Yes (for sign-in)</td></tr>
+      <tr><td>User content (vehicles and records)</td><td>App functionality</td><td>No</td><td>Yes</td></tr>
+      <tr><td>Photos (receipts)</td><td>On-device text recognition</td><td>No — never leaves the device, not collected</td><td>Optional</td></tr>
+      <tr><td>Advertising ID, device info</td><td>Advertising (free plan only)</td><td>Yes — Google AdMob</td><td>Not on Pro</td></tr>
+      <tr><td>Purchase history</td><td>Subscription status</td><td>Via the store (Apple / Google)</td><td>Pro only</td></tr>
+    </table></div>
+    <ul>
+      <li><span class="yes">✓</span> Data is encrypted in transit.</li>
+      <li><span class="yes">✓</span> Your account and all data can be deleted in one step in the app, or requested on the web.</li>
+      <li><span class="yes">✓</span> Data is never sold; in-app records are not used for tracking.</li>
+    </ul>
+  </section>
+
+  <section id="terms-en">
+    <h2>Terms of use</h2>
+    <p>Otolog is provided for keeping your personal vehicle records. By using the app you accept these terms. You are responsible for the accuracy of the information you enter and for the files you share. The app is provided as is; features and plans may change over time. Access may be restricted in case of abuse or fraudulent transfers.</p>
+    <h3>Disclaimer</h3>
+    <p>Consumption figures, maintenance estimates, reminders and notifications are for information only. Check legal deadlines such as inspection, insurance and tax with official sources. Otolog is not liable for missed deadlines, fines, breakdowns or data loss. "Recorded on time" and service passport marks are trust signals, not official documents.</p>
+    <p>For iOS users, Apple's <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Standard License Agreement (EULA)</a> also applies.</p>
+  </section>
+
+  <section id="subscription-en">
+    <h2>Plans and Otolog Pro subscription</h2>
+    <p><strong>Free:</strong> 1 active vehicle, unlimited records and history, 5 smart receipt reads per month, an ad at app open at most once every 4 hours. <strong>Otolog Pro (Monthly / Annual):</strong> no ads, unlimited vehicles and receipt reads, sale and transfer tools, advanced statistics and CSV.</p>
+    <ul>
+      <li>Otolog Pro is an auto-renewing subscription. Payment is charged to your App Store or Google Play account when you confirm the purchase.</li>
+      <li>The subscription renews for the same period and price unless cancelled at least 24 hours before the end of the current period; renewal is charged within 24 hours before the period ends.</li>
+      <li>The annual plan may include a 7-day free trial; cancel before it ends and you won't be charged.</li>
+      <li>Manage or cancel in your store account settings (iOS: Settings › Apple ID › Subscriptions; Android: Google Play › Payments &amp; subscriptions). Cancellation takes effect at the end of the current period.</li>
+      <li>Prices are shown in the store in your region's currency. Refunds are subject to Apple / Google policies.</li>
+      <li>Deleting the app does not cancel the subscription. When a subscription ends, your records are never deleted; extra vehicles are kept read-only.</li>
+    </ul>
+  </section>
+
+  <section id="delete-en">
+    <h2>Delete account and data</h2>
+    <div class="callout"><strong>In the app (recommended, immediate):</strong> tap the profile icon at the top right of the home screen › "Delete my account and data" › confirm › choose your Google account again for security.</div>
+    <h3>If you can't access the app</h3>
+    <ol>
+      <li>Email <a href="mailto:otolog.destek@gmail.com?subject=Otolog%20account%20deletion%20request">otolog.destek@gmail.com</a> from the Google account address you used to sign in to Otolog.</li>
+      <li>Subject: "Account deletion request". The request must come from the account's email so we can verify it is you.</li>
+      <li>Your request is completed within 30 days and confirmed by email.</li>
+    </ol>
+    <h3>What is deleted</h3>
+    <ul>
+      <li>your Firebase account and user ID,</li>
+      <li>all vehicles and maintenance, fuel / charging, reminder and glovebox records,</li>
+      <li>transfer offers you sent and your transfer directory entry,</li>
+      <li>scheduled notifications and app preferences on your device.</li>
+    </ul>
+    <h3>What is kept</h3>
+    <p>Otolog keeps no records on its servers. Records you previously transferred and the buyer accepted now belong to the buyer's account. Files you shared (PDF / CSV / .otolog) stay with their recipients. Purchase records are kept by Apple / Google for legally required periods. Deleted data is removed from Google infrastructure backups within Google's deletion timelines.</p>
+    <p>To delete only specific data without deleting your account, delete the record, vehicle or reminder in the app; if you can't, email the same address.</p>
+  </section>
+
+  <section id="contact-en">
+    <h2>Contact</h2>
+    <p>For questions, support and data requests:</p>
+    <a class="mail" href="mailto:otolog.destek@gmail.com">✉ otolog.destek@gmail.com</a>
+    <p class="meta">If this policy changes, the current version is published on this page and in the app; significant changes are announced in the app.</p>
+  </section>
+</div>
+
+<!-- ======================= DEUTSCH ======================= -->
+<div data-lang="de" lang="de">
+  <div class="hero">
+    <h1>Datenschutz, Bedingungen und Kontolöschung</h1>
+    <p>Otolog ist eine mobile App zur Führung deiner Wartungs-, Tank- / Lade-, Erinnerungs- und Kosteneinträge. Diese Seite ist die Webversion des Textes „Datenschutz und Bedingungen“ in der App.</p>
+    <div class="meta">Zuletzt aktualisiert: 19. November 2026 · Version 1.0</div>
+    <div class="badges">
+      <a class="badge" href="#" aria-disabled="true"><span>&#63743;</span><span><small>Demnächst</small><strong>App Store</strong></span></a>
+      <a class="badge" href="#" aria-disabled="true"><span>&#9654;</span><span><small>Demnächst</small><strong>Google Play</strong></span></a>
+    </div>
+  </div>
+  <nav class="toc">
+    <a href="#privacy-de">Datenschutzerklärung</a><a href="#safety-de">Datensicherheit</a><a href="#terms-de">Nutzungsbedingungen</a><a href="#subscription-de">Abo</a><a href="#delete-de">Konto und Daten löschen</a><a href="#contact-de">Kontakt</a>
+  </nav>
+
+  <section id="privacy-de">
+    <h2>Datenschutzerklärung</h2>
+    <p>Diese Erklärung beschreibt, welche Daten die App Otolog (Android und iOS) verarbeitet und warum. Verantwortlicher ist der Entwickler von Otolog; Kontakt: <a href="mailto:otolog.destek@gmail.com">otolog.destek@gmail.com</a>.</p>
+    <h3>Erhobene Daten</h3>
+    <ul>
+      <li><strong>Kontodaten:</strong> bei der Anmeldung mit Google dein Name, deine E-Mail-Adresse, dein Profilfoto und deine Firebase-Nutzer-ID.</li>
+      <li><strong>Deine Eingaben:</strong> Fahrzeugdaten (Kennzeichen, Marke, Modell, Baujahr, Kilometerstand), Wartungs-, Tank- / Lade- und Erinnerungseinträge, Beträge, Notizen und Handschuhfach-Angaben (FIN, Policennummer, Reifen- / Öldaten, Notizen).</li>
+      <li><strong>Werbedaten (nur kostenloser Plan):</strong> Google AdMob kann Daten wie Werbe-ID, IP-Adresse und Geräteinformationen verarbeiten.</li>
+      <li><strong>Nur auf dem Gerät:</strong> Design, Sprache, Währung, Benachrichtigungseinstellungen, der monatliche Beleg-Scan-Zähler und der zwischengespeicherte Abo-Status bleiben auf deinem Gerät.</li>
+    </ul>
+    <p>Standort, Kontakte, Mikrofon, Gesundheits- oder Finanzkontodaten werden nicht erhoben. Die Kamera öffnet sich nur über die Systemkamera, wenn du „Beleg scannen“ tippst.</p>
+    <h3>Intelligentes Beleglesen</h3>
+    <p>Das Beleglesen läuft vollständig auf deinem Gerät (Google ML Kit, Texterkennung auf dem Gerät). Das Foto wird nie hochgeladen und nach dem Auslesen gelöscht; gespeichert werden nur die Werte, die du im Formular bestätigst.</p>
+    <h3>Zwecke und Rechtsgrundlagen</h3>
+    <ul>
+      <li>Konto anlegen und Einträge geräteübergreifend speichern (Vertragserfüllung, Art. 6 Abs. 1 lit. b DSGVO).</li>
+      <li>Erinnerungsbenachrichtigungen auf dem Gerät planen (Art. 6 Abs. 1 lit. b DSGVO).</li>
+      <li>Im kostenlosen Plan beim Öffnen der App höchstens alle 4 Stunden eine Anzeige zeigen (berechtigtes Interesse bzw. Einwilligung, Art. 6 Abs. 1 lit. f / a DSGVO).</li>
+    </ul>
+    <p>Deine Daten werden nicht verkauft und nicht für Profilbildung oder Werbe-Targeting genutzt. Fahrzeug- und Wartungseinträge werden nie an den Werbeanbieter weitergegeben.</p>
+    <h3>Auftragsverarbeiter und Dienste</h3>
+    <ul>
+      <li>Google Firebase Authentication und Cloud Firestore — Anmeldung und Speicherung (<a href="https://firebase.google.com/support/privacy" rel="noopener">Datenschutz</a>). Eine Übermittlung in die USA erfolgt auf Grundlage von Standardvertragsklauseln bzw. dem EU-US Data Privacy Framework.</li>
+      <li>Google AdMob — Werbung beim App-Start im kostenlosen Plan (<a href="https://policies.google.com/technologies/ads" rel="noopener">Werberichtlinie</a>).</li>
+      <li>Google ML Kit — Texterkennung auf dem Gerät (keine Datenübermittlung).</li>
+      <li>Apple App Store / Google Play — Abo-Zahlungen; Otolog sieht deine Zahlungsdaten nie.</li>
+    </ul>
+    <h3>Weitergabe und Fahrzeugübertragung in der App</h3>
+    <p>PDF-, CSV-, Inserat- und .otolog-Dateien verlassen dein Gerät nur, wenn du sie teilst. Für Übertragungen in der App können Otolog-Nutzer, die deine genaue E-Mail-Adresse kennen, deinen Namen und dein Konto finden. Ein Übertragungspaket sieht nur der von dir gewählte Käufer; du entscheidest, ob Beträge, Notizen, Erinnerungen und Tankeinträge enthalten sind. Halterbezogene Finanzeinträge wie Versicherung und Kfz-Steuer werden nie übertragen.</p>
+    <h3>Sicherheit und Speicherdauer</h3>
+    <p>Daten werden bei der Übertragung verschlüsselt (TLS) und auf Google-Infrastruktur gespeichert. Sicherheitsregeln erlauben nur deinem Konto den Zugriff. Daten werden bis zur Löschung deines Kontos gespeichert und dann dauerhaft gelöscht.</p>
+    <h3>Kinder</h3>
+    <p>Otolog richtet sich nicht an Kinder unter 13 Jahren und erhebt wissentlich keine personenbezogenen Daten von Kindern.</p>
+    <h3>Deine Rechte (DSGVO)</h3>
+    <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch und Datenübertragbarkeit. Einträge kannst du in der App als CSV / PDF exportieren, korrigieren und löschen. Für andere Anliegen schreib uns; wir antworten innerhalb von 30 Tagen. Du kannst dich außerdem bei einer Datenschutz-Aufsichtsbehörde beschweren.</p>
+  </section>
+
+  <section id="safety-de">
+    <h2>Datensicherheit – Überblick</h2>
+    <p>Zusammenfassung unserer Angaben unter Google Play „Datensicherheit“ und App Store „Datenschutzangaben“.</p>
+    <div class="table-scroll"><table>
+      <tr><th>Datentyp</th><th>Zweck</th><th>Weitergabe an Dritte</th><th>Erforderlich</th></tr>
+      <tr><td>Name, E-Mail, Nutzer-ID</td><td>App-Funktion, Kontoverwaltung</td><td>Nein (Firebase ist Auftragsverarbeiter)</td><td>Ja (Anmeldung)</td></tr>
+      <tr><td>Nutzerinhalte (Fahrzeuge, Einträge)</td><td>App-Funktion</td><td>Nein</td><td>Ja</td></tr>
+      <tr><td>Fotos (Belege)</td><td>Texterkennung auf dem Gerät</td><td>Nein — verlassen das Gerät nicht, nicht erhoben</td><td>Optional</td></tr>
+      <tr><td>Werbe-ID, Geräteinfos</td><td>Werbung (nur kostenloser Plan)</td><td>Ja — Google AdMob</td><td>Nicht bei Pro</td></tr>
+      <tr><td>Kaufhistorie</td><td>Abo-Status</td><td>Über den Store (Apple / Google)</td><td>Nur Pro</td></tr>
+    </table></div>
+    <ul>
+      <li><span class="yes">✓</span> Daten werden bei der Übertragung verschlüsselt.</li>
+      <li><span class="yes">✓</span> Konto und alle Daten lassen sich in der App in einem Schritt löschen oder im Web beantragen.</li>
+      <li><span class="yes">✓</span> Daten werden nicht verkauft; Einträge werden nicht für Tracking genutzt.</li>
+    </ul>
+  </section>
+
+  <section id="terms-de">
+    <h2>Nutzungsbedingungen</h2>
+    <p>Otolog dient der Führung deiner persönlichen Fahrzeugeinträge. Mit der Nutzung akzeptierst du diese Bedingungen. Für die Richtigkeit deiner Angaben und die geteilten Dateien bist du verantwortlich. Die App wird ohne Gewähr bereitgestellt; Funktionen und Pläne können sich ändern. Bei Missbrauch oder betrügerischen Übertragungen kann der Zugang eingeschränkt werden.</p>
+    <h3>Haftungsausschluss</h3>
+    <p>Verbrauchswerte, Wartungsprognosen, Erinnerungen und Benachrichtigungen dienen nur der Information. Prüfe gesetzliche Fristen wie HU, Versicherung und Steuer bei offiziellen Stellen. Otolog haftet nicht für versäumte Fristen, Bußgelder, Pannen oder Datenverlust, soweit gesetzlich zulässig (die Haftung für Vorsatz, grobe Fahrlässigkeit und Personenschäden bleibt unberührt). „Rechtzeitig erfasst“ und der Servicepass sind Vertrauenshinweise, keine amtlichen Dokumente.</p>
+    <p>Für iOS-Nutzer gilt zusätzlich Apples <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Standard-Lizenzvertrag (EULA)</a>.</p>
+  </section>
+
+  <section id="subscription-de">
+    <h2>Pläne und Otolog Pro-Abo</h2>
+    <p><strong>Kostenlos:</strong> 1 aktives Fahrzeug, unbegrenzte Einträge und Historie, 5 Beleg-Scans pro Monat, höchstens alle 4 Stunden eine Anzeige beim App-Start. <strong>Otolog Pro (Monatlich / Jährlich):</strong> werbefrei, unbegrenzte Fahrzeuge und Beleg-Scans, Verkaufs- und Übertragungstools, erweiterte Statistik und CSV.</p>
+    <ul>
+      <li>Otolog Pro ist ein sich automatisch verlängerndes Abo. Die Zahlung erfolgt bei Kaufbestätigung über dein App Store- oder Google Play-Konto.</li>
+      <li>Das Abo verlängert sich zum gleichen Zeitraum und Preis, wenn es nicht mindestens 24 Stunden vor Ablauf gekündigt wird; die Verlängerung wird innerhalb von 24 Stunden vor Ablauf berechnet.</li>
+      <li>Der Jahresplan kann eine 7-tägige kostenlose Testphase enthalten; kündigst du vorher, entstehen keine Kosten.</li>
+      <li>Verwalten und kündigen in den Store-Einstellungen (iOS: Einstellungen › Apple-ID › Abonnements; Android: Google Play › Zahlungen und Abos). Die Kündigung wird zum Ende des laufenden Zeitraums wirksam.</li>
+      <li>Preise werden im Store in der Währung deiner Region angezeigt. Erstattungen richten sich nach den Regeln von Apple / Google; gesetzliche Widerrufsrechte bleiben unberührt.</li>
+      <li>Das Löschen der App kündigt das Abo nicht. Nach Abo-Ende werden deine Einträge nie gelöscht; zusätzliche Fahrzeuge bleiben schreibgeschützt erhalten.</li>
+    </ul>
+  </section>
+
+  <section id="delete-de">
+    <h2>Konto und Daten löschen</h2>
+    <div class="callout"><strong>In der App (empfohlen, sofort):</strong> Profilsymbol oben rechts auf dem Startbildschirm › „Konto und Daten löschen“ › bestätigen › aus Sicherheitsgründen das Google-Konto erneut wählen.</div>
+    <h3>Wenn du keinen Zugriff auf die App hast</h3>
+    <ol>
+      <li>Schreib an <a href="mailto:otolog.destek@gmail.com?subject=Otolog%20Kontol%C3%B6schung">otolog.destek@gmail.com</a> von der Google-Adresse, mit der du dich bei Otolog angemeldet hast.</li>
+      <li>Betreff: „Antrag auf Kontolöschung“. Die Anfrage muss von der Konto-E-Mail kommen, damit wir dich identifizieren können.</li>
+      <li>Die Löschung erfolgt innerhalb von 30 Tagen und wird per E-Mail bestätigt.</li>
+    </ol>
+    <h3>Was gelöscht wird</h3>
+    <ul>
+      <li>dein Firebase-Konto und deine Nutzer-ID,</li>
+      <li>alle Fahrzeuge sowie Wartungs-, Tank- / Lade-, Erinnerungs- und Handschuhfach-Einträge,</li>
+      <li>von dir gesendete Übertragungsangebote und dein Verzeichniseintrag,</li>
+      <li>geplante Benachrichtigungen und App-Einstellungen auf deinem Gerät.</li>
+    </ul>
+    <h3>Was erhalten bleibt</h3>
+    <p>Otolog speichert keine Einträge auf eigenen Servern. Bereits übertragene und vom Käufer angenommene Einträge gehören zum Konto des Käufers. Geteilte Dateien (PDF / CSV / .otolog) bleiben bei den Empfängern. Kaufbelege werden von Apple / Google für gesetzliche Fristen aufbewahrt. Gelöschte Daten werden innerhalb der Löschfristen von Google aus Sicherungen entfernt.</p>
+    <p>Um nur bestimmte Daten zu löschen, lösche den Eintrag, das Fahrzeug oder die Erinnerung in der App; falls das nicht möglich ist, schreib an dieselbe Adresse.</p>
+  </section>
+
+  <section id="contact-de">
+    <h2>Kontakt</h2>
+    <p>Für Fragen, Support und Datenanfragen:</p>
+    <a class="mail" href="mailto:otolog.destek@gmail.com">✉ otolog.destek@gmail.com</a>
+    <p class="meta">Ändert sich diese Erklärung, wird die aktuelle Fassung auf dieser Seite und in der App veröffentlicht; wesentliche Änderungen werden in der App angekündigt.</p>
+  </section>
+</div>
+
+</main>
+<footer>© 2026 Otolog · <a href="mailto:otolog.destek@gmail.com">otolog.destek@gmail.com</a></footer>
+
+<script>
+(function () {
+  var root = document.documentElement, langs = ['tr', 'en', 'de'];
+  var titles = { tr: 'Otolog – Gizlilik, koşullar ve hesap silme', en: 'Otolog – Privacy, terms and account deletion', de: 'Otolog – Datenschutz, Bedingungen und Kontolöschung' };
+  function store(k, v) { try { v === undefined ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch (e) {} }
+  function read(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function setLang(l, keepHash) {
+    if (langs.indexOf(l) < 0) l = 'tr';
+    root.setAttribute('data-active', l); root.lang = l; document.title = titles[l];
+    document.querySelectorAll('[data-set-lang]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.setLang === l)); });
+    store('otolog_lang', l);
+    var u = new URL(location.href); u.searchParams.set('lang', l);
+    history.replaceState(null, '', keepHash ? u : u.pathname + u.search + location.hash);
+  }
+  // Dil: ?lang= → kayıtlı → tarayıcı dili → tr
+  var q = new URLSearchParams(location.search).get('lang');
+  var nav = (navigator.language || 'tr').slice(0, 2).toLowerCase();
+  setLang(q || read('otolog_lang') || (langs.indexOf(nav) >= 0 ? nav : (nav === 'tr' ? 'tr' : 'en')), true);
+  document.querySelectorAll('[data-set-lang]').forEach(function (b) { b.addEventListener('click', function () { setLang(b.dataset.setLang, true); }); });
+  // #delete (mağaza hesap silme URL'si) her dilde o dilin silme bölümüne gider
+  function routeHash() {
+    if (location.hash !== '#delete') return;
+    var l = root.getAttribute('data-active'), id = l === 'tr' ? 'delete' : 'delete-' + l;
+    var el = document.getElementById(id); if (el) el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', routeHash); routeHash();
+  // Tema: sistem → elle (açık / koyu döngüsü)
+  var t = read('otolog_theme'); if (t) root.setAttribute('data-theme', t);
+  document.getElementById('theme').addEventListener('click', function () {
+    var dark = root.getAttribute('data-theme') ? root.getAttribute('data-theme') === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    var next = dark ? 'light' : 'dark'; root.setAttribute('data-theme', next); store('otolog_theme', next);
+  });
+})();
+</script>
+</body>
+</html>
